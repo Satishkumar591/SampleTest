@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title size="large">System Test</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" id="customDesign">
+  <div class="heading">
+    <ion-label size="small">My Matches</ion-label>
+    <ion-label>8 Profiles pending with me <span class="outline"><span>5 NEW</span></span></ion-label>
+  </div>
+
+  <div id="container">
+    <swiper-container #swiper
+    (afterinit)="swiperReady()"
+    (slidechange)="swiperSlideChanged($event)"
+    [loop]="true"
+    [pagination]="true"
+    [zoom]="true">
+      <swiper-slide class="cardDetails" *ngFor="let item of profileDetails; let i = index; first as isFirst">
+        <div [ngStyle]="{'margin-left': !isFirst ? '8px' : '0px' }">
+          <mat-card class="example-card">
+            <img mat-card-image src="{{item.image}}" alt="Photo of a Shiba Inu" width="300" height="250" (click)="navigateToProfile(item)">
+            <mat-card-content>
+              <p style="font-weight: bold;">{{item.name}}</p>
+              <p style="font-size: 14px;">{{item.age}}, {{item.height}}, {{item.language}},{{item.religion}},
+                {{item.education}}, {{item.city}}, {{item.state}}, {{item.country}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button class="customBtnYes" (click)="navigateToProfile(item)">Yes</button>
+              <button mat-button class="customBtnNo">No</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+</ion-content>
+

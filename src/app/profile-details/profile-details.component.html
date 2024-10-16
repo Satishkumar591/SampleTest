@@ -1,0 +1,21 @@
+<ion-content [fullscreen]="true" id="customDesign">
+  <div id="container">
+    <div *ngIf="profileDetails">
+      <mat-card class="example-card">
+        <img mat-card-image src="{{profileDetails.image}}" alt="Photo of a Shiba Inu" width="300" height="250">
+        <mat-card-content>
+          <p style="font-weight: bold;">{{profileDetails.name}}</p>
+          <p style="font-size: 14px;">{{profileDetails.age}}, {{profileDetails.height}}, {{profileDetails.language}},{{profileDetails.religion}},
+            {{profileDetails.education}}, {{profileDetails.city}}, {{profileDetails.state}}, {{profileDetails.country}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+  <div class="gestureContainer">
+    <span (click)="navigateTo()">Go to Daily Recommendations</span>
+  </div>
+</ion-content>
+
+

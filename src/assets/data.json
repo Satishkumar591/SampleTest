@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Priyanka",
+    "age": "27 Yrs",
+    "height": "5 ft 2 in",
+    "language": "Tamil",
+    "religion": "Nair",
+    "education": "MBBS, Doctor",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "image": "../assets/images/actress1.jpg"
+  },
+  {
+    "name": "Harini",
+    "age": "22 Yrs",
+    "height": "5 ft",
+    "language": "Tamil",
+    "religion": "Mudaliyar",
+    "education": "BE",
+    "city": "Madurai",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "image": "../assets/images/actress5.jpg"
+  },
+  {
+    "name": "Manisha Mohan",
+    "age": "29 Yrs",
+    "height": "5 ft 4 in",
+    "language": "Tamil",
+    "religion": "Nil",
+    "education": "MBA",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "image": "../assets/images/actress3.jpg"
+  },
+  {
+    "name": "Abinaya",
+    "age": "21 Yrs",
+    "height": "4 ft 9 in",
+    "language": "Tamil",
+    "religion": "Hindu",
+    "education": "BE",
+    "city": "Trichy",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "image": "../assets/images/actress4.jpg"
+  },
+  {
+    "name": "Shalini Sundar",
+    "age": "27 Yrs",
+    "height": "5 ft 3 in",
+    "language": "Tamil",
+    "religion": "Vellalar",
+    "education": "MD",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "image": "../assets/images/actress1.jpg"
+  },
+  {
+    "name": "Zyna Beham",
+    "age": "25 Yrs",
+    "height": "5 ft 1 in",
+    "language": "Tamil",
+    "religion": "Muslim",
+    "education": "MBBS",
+    "city": "Theni",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "image": "../assets/images/actress6.jpg"
+  }
+]

@@ -1,0 +1,77 @@
+#container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.profileId {
+  color: #ffffff;
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #222;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+#customDesign {
+  --ion-background-color: #33a3db;
+  // top: 2em;
+
+  ion-label {
+    color: #ffffff;
+    padding: 1em;
+    font-size: 16px;
+  }
+
+  .profilePending {
+    margin-top: 14px;
+    ion-label {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+
+.mat-mdc-card-content {
+  display: block !important;
+  padding: 11px !important;
+  background: #ffffff !important;
+  color: #000000 !important;
+  // border-bottom-left-radius: 20px;
+  // border-bottom-right-radius: 20px;
+}
+
+.example-card {
+  max-width: 300px;
+  // border-radius: 20px;
+  // padding: 0px 0px 20px 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.gestureContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+
+
