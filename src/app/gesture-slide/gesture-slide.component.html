@@ -28,17 +28,17 @@
           {{item.education}}, {{item.city}}, {{item.state}}, {{item.country}}
         </p>
         <div class="buttonView">
-          <div  style="margin-top: 10px; display: flex;" (click)="intrestedProfile('shortlisted')">
+          <div  style="margin-top: 10px; display: flex;" (click)="intrestedProfile('shortlisted')" (tap)="onTap($event, 'shortlisted')">
             <i class="fa fa-star-o" style="font-size:13px"></i>&nbsp;
             <span>Shortlist</span>
           </div>
           <div>
             <span style="display: flex;"><span style="margin-top: 10px; font-weight: bold;">Like Her?&nbsp;</span>
               <span style="display: flex;">
-                <div class="tickIcon" (click)="intrestedProfile('accept')">
+                <div class="tickIcon" (click)="intrestedProfile('accept')" (tap)="onTap($event, 'accept')">
                   <i class="fa fa-check" style="font-size:20px"></i>
                 </div>
-                <div class="crossIcon" (click)="intrestedProfile('reject')">
+                <div class="crossIcon" (click)="intrestedProfile('reject')" (tap)="onTap($event, 'reject')">
                   <i class="fa fa-close" style="font-size:20px"></i>
                 </div>
               </span>

@@ -148,6 +148,7 @@ export class GestureSlideComponent {
   }
 
   async intrestedProfile(type) {
+    console.log(type, 'typee')
     let toast = await this.toastController.create({
       message:  type == 'accept' ? 'Interested' : type == 'reject' ? 'Not Interested' : 'Shortlisted',
       duration: 1500,
@@ -155,4 +156,46 @@ export class GestureSlideComponent {
     });
     await toast.present();
   }
+
+  onTap(event, type) {
+    if(type == 'accept' || type == 'shortlisted') {
+      event.deltaX = 360;
+      event.deltaY = -269;
+    } else {
+      event.deltaX = -484;
+      event.deltaY = -269;
+    }
+    console.log(event, 'EVENT')
+
+    this.renderer.addClass(this.tinderCardsArray[0].nativeElement, 'moving');
+
+    if (event.deltaX > 0) {
+      this.toggleChoiceIndicator(false, true);
+    }
+    if (event.deltaX < 0) {
+      this.toggleChoiceIndicator(true, false);
+    }
+
+    let xMulti = event.deltaX * 0.03;
+    let yMulti = event.deltaY / 80;
+    let rotate = xMulti * yMulti;
+
+    this.renderer.setStyle(
+      this.tinderCardsArray[0].nativeElement,
+      'transform',
+      'translate(' +
+        event.deltaX +
+        'px, ' +
+        event.deltaY +
+        'px) rotate(' +
+        rotate +
+        'deg)'
+    );
+
+    this.shiftRequired = true;
+
+    this.handleShift();
+
+  }
+
 }
